@@ -14,6 +14,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  pathPrefix: "/gatsby-jaknaeshop-web",
   plugins: [
     `gatsby-plugin-image`,
     {
