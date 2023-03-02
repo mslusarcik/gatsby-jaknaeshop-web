@@ -8,7 +8,7 @@ const Button = ({ target, type, className, children }) => {
   return (
     <>
       <Link
-        to={target}
+        to={target || '#'}
         className={`btn btn-${buttonType || "primary"} ${className || ""}`}
       >
         {children}
