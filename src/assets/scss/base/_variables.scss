@@ -1,0 +1,19 @@
+// Header setup
+$heightHeader: 75px;
+$heightHeaderMobile: 60px;
+
+/*
+ * Colors
+ * ****** */
+
+// Primary
+$colorPrimary: #FEC82E;
+$colorPrimaryHover: darken($colorPrimary, 10%);
+
+// Black
+$colorBlackV1: #222;
+$colorBlackHoverV1: darken($colorBlackV1, 10%);
+
+// White
+$colorWhiteV1: #fff;
+$colorWhiteHoverV1: darken($colorWhiteV1, 10%);
