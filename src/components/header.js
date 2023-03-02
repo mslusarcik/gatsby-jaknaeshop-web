@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import Button from "./button"
-import Container from "./container"
+import Button from "./Button"
+import Container from "./Container"
 
 // Import assets
 import Logo from "../images/logo.png"

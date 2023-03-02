@@ -1,10 +1,10 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Section from "../components/section"
-import Container from "../components/container"
-import Hero from "../components/hero"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
+import Section from "../components/Section"
+import Container from "../components/Container"
+import Hero from "../components/Hero"
 
 import useCurrentWidth from "../hooks/useCurrentWidth"
 
