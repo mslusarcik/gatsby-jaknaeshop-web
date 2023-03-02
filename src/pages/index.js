@@ -17,7 +17,8 @@ const IndexPage = () => {
   return (
     <Layout className="type-index">
       <Section>
-        <Container>{`Current width -> ${width}`}</Container>
+        <div style={{position: "absolute", bottom: 0, right: 0, padding: "15px 25px", backgroundColor: "green", color: "white"}}>{`Current width -> ${width}`}</div>
+        {/* <Container>{`Current width -> ${width}`}</Container> */}
         <Container>
           <Hero
             title={
@@ -38,7 +39,7 @@ const IndexPage = () => {
             image={HeroImageLg}
             primaryButtonType="primary"
             primaryButton="Chci koupit kurz"
-            primaryButtonTarget="/#start"
+            primaryButtonTarget="/"
             secondaryButtonType="default-outline"
             secondaryButton="Ještě se tu porozhlédnu"
             secondaryButtonTarget="/"

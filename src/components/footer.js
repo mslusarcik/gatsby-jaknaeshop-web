@@ -1,7 +1,6 @@
 import React from "react"
 
 const Footer = () => {
-  console.log("Footer component is running.")
   return (
     <footer>
       <span>
