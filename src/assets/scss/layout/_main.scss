@@ -1,12 +1,12 @@
 main {
-  min-height: calc(100vh - 105px - 95px);
+  min-height: calc(100vh - 114px - 96px);
   overflow: hidden;
 }
 
 .inner-content {
   max-width: 1320px;
   width: 100%;
-  padding: 40px 15px;
+  padding: 40px 16px;
   margin: 0 auto;
 
   @media (min-width: 1200px) {
