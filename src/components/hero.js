@@ -19,6 +19,7 @@ const Hero = ({
   image,
   imageMdUp,
   children,
+  className,
 }) => {
   const [heroImage, setHeroImage] = useState(imageMdUp)
   let width = useCurrentWidth()
@@ -35,16 +36,16 @@ const Hero = ({
   return (
     <>
       <div
-        className="flex flex-col justify-center w-full min-h-[480px] bg-slate-50 rounded-xl hero"
+        className={`flex flex-col justify-center w-full bg-cover bg-center min-h-[480px] hero ${
+          className || ""
+        }`}
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="content">
-          <h2 className="title uppercase text-white">
+          <h2 className="title uppercase !text-white h1">
             {title || "Title is empty"}
           </h2>
-          <p className="subtitle text-white">
-            {subtitle || "Subtitle is empty"}
-          </p>
+          <p className="subtitle">{subtitle || "Subtitle is empty"}</p>
           {primaryButton && (
             <Button type={primaryButtonType} target={primaryButtonTarget}>
               {primaryButton || "Button text is empty"}
