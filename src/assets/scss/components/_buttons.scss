@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   border: 2px solid transparent;
-  padding: 15px 40px;
+  padding: 16px 40px;
   min-width: 80px;
   border-radius: 8px;
   transition: background-color .35s ease-in-out, color .35s ease-in-out;
@@ -12,7 +12,7 @@
 
   &.btn-primary {
     background-color: $colorPrimary;
-    color: $colorBlackV1;
+    color: $colorSecondary;
 
     &:hover {
       background-color: $colorPrimaryHover;
@@ -20,20 +20,20 @@
   }
 
   &.btn-secondary {
-    background-color: $colorBlackV1;
+    background-color: $colorSecondary;
     color: $colorWhiteV1;
 
     &:hover {
-      background-color: $colorBlackHoverV1;
+      background-color: $colorSecondaryHover;
     }
   }
 
   &.btn-default {
     background-color: $colorWhiteV1;
-    color: $colorBlackV1;
+    color: $colorSecondary;
 
     &:hover {
-      background-color: $colorWhiteHoverV1;
+      background-color: $colorSecondaryHover;
     }
   }
 
@@ -50,12 +50,12 @@
 
   &.btn-secondary-outline {
     background-color: transparent;
-    border-color: $colorBlackV1;
-    color: $colorBlackV1;
+    border-color: $colorSecondary;
+    color: $colorSecondary;
 
     &:hover {
-      border-color: $colorBlackHoverV1;
-      color: $colorBlackHoverV1;
+      border-color: $colorSecondaryHover;
+      color: $colorSecondaryHover;
     }
   }
 
@@ -67,7 +67,7 @@
     &:hover {
       border-color: $colorWhiteV1;
       background-color: $colorWhiteV1;
-      color: $colorBlackHoverV1;
+      color: $colorSecondaryHover;
     }
   }
 }
