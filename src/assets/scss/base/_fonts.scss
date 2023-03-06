@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  word-spacing: -3px;
+  line-height: 1.5rem;
+  @apply text-greyV1;
+}
+
+b, strong {
+  font-weight: 400;
+}
