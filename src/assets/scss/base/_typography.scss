@@ -1,22 +1,32 @@
 /* Paragraphs */
 
 p {
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 8px;
+
+  &.subtitle {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+  }
+}
+
+a {
+  text-decoration: underline;
+  @apply text-primary;
 }
 
 /* Headings */
 
 h1, .h1,
-h2, .h2 {
+h2, .h2,
+h3, .h3 {
   font-family: 'Prompt', sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 1.25;
   word-spacing: -2px;
 }
 
-h3, .h3, h4, .h4, h5, .h5, h6, .h6, b, strong {
+h4, .h4, h5, .h5, h6, .h6 {
   font-family: 'Prompt', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -24,37 +34,36 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6, b, strong {
 }
 
 h1, .h1 {
-  font-size: 67px;
-  margin-bottom: 24px;
+  font-size: 4.1875rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+  @apply text-secondary;
 }
 
 h2, .h2 {
-  font-size: 50px;
-  margin-bottom: 16px;
+  font-size: 3.125rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+  @apply text-secondary;
 }
 
 h3, .h3 {
-  font-size: 38px;
-  margin-bottom: 12px;
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  margin-bottom: 1.5rem;
+  @apply text-secondary;
 }
 
 h4, .h4 {
-  font-size: 28px;
-  margin-bottom: 12px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.75rem;
+  @apply text-secondary;
 }
 
 h5, .h5 {
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-
-h6, .h6 {
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-/* Colors */
-
-.color-white {
-  color: $colorWhiteV1;
+  font-size: 1.3125rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
+  @apply text-secondary;
 }

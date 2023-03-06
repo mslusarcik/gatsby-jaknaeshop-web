@@ -14,7 +14,10 @@
 
 @import 'base/variables';
 @import 'base/typography';
+@import 'base/fonts';
 @import 'base/normalize';
+@import 'base/colors';
+@import 'base/lists';
 
 
 /* 
@@ -35,3 +38,10 @@
 
 @import 'components/buttons';
 @import 'components/hero';
+
+/* 
+ * STYLES FOR
+ * PAGES
+ * ********** */
+
+@import 'pages/index'
