@@ -1,16 +1,22 @@
 .hero {
   .content {
-    padding: 40px 65px;
+    padding: 2.5rem 4rem;
     h2.title {
-      font-size: 38px;
-
+      // font-size: 2.375rem;
+      // line-height: 3rem;
     }
     p.subtitle {
-      font-size: 18px;
+      font-size: 1.3rem;
+      line-height: 1.75rem;
       font-weight: 300;
+      color: #dedede;
+
+      strong {
+        font-weight: 500;
+      }
     }
   }
   .btn {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 }
