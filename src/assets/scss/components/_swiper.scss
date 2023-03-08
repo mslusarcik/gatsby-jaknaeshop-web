@@ -1,0 +1,42 @@
+.slider-v1 {
+  .swiper-button-prev, .swiper-button-next {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    left: auto;
+    top: auto;
+    @apply bg-secondary;
+
+    &:after {
+      font-size: 1rem;
+      @apply text-primary;
+    }
+  }
+
+  .swiper-button-prev {
+    top: 4.5rem;
+    bottom: auto;
+    left: auto;
+    right: 4rem;
+    @screen lg {
+      top: 64px;
+      left: 102px;
+      bottom: auto;
+      right: auto;
+    }
+  }
+  
+  .swiper-button-next {
+    top: 4.5rem;
+    bottom: 0;
+    left: auto;
+    right: .5rem;
+    @screen lg {
+      top: 64px;
+      left: 152px;
+      bottom: auto;
+      right: auto;
+    }
+  }
+}
