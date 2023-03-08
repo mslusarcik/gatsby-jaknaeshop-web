@@ -9,7 +9,7 @@ main {
   padding: 40px 16px;
   margin: 0 auto;
 
-  @media (min-width: 1200px) {
+  @screen xl {
     padding-left: 0;
     padding-right: 0;
   }

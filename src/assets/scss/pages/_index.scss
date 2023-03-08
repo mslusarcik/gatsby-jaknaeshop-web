@@ -9,11 +9,16 @@
 
     .hero {
       padding-top: 96px;
-      min-height: 650px;
+      min-height: 100vh;
+      @screen md {
+        min-height: 650px;
+      }
 
       .content {
         @apply container;
-        padding: 40px 64px;
+        @screen lg {
+          padding: 2.5rem 4rem;
+        }
       }
     }
   }
