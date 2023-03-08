@@ -1,10 +1,10 @@
 import * as React from "react"
 
-import Button from "./Button"
-import Container from "./Container"
+import Button from "../Button/Button"
+import Container from "../Container/Container"
 
 // Import assets
-import Logo from "../images/logo-less.svg"
+import Logo from "../../images/logo-less.svg"
 
 // Import other react stuff
 import { Link } from "gatsby"
@@ -17,10 +17,10 @@ const Header = () => {
           <div className="logo-wrapper">
             <Link to={"/"} className="flex items-center">
               <img src={Logo} alt="" className="logo" />
-              <span className="font-bold text-xl ml-2">
+              <span className="font-bold text-md md:text-xl ml-2">
                 JAKNAESHOP
                 <br />
-                <span className="font-light text-sm block">
+                <span className="font-light text-[14px] lg:text-sm block">
                   …ukážu vám, že e-shop může mít každý
                 </span>
               </span>
@@ -29,7 +29,11 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <Button type="primary" to="/">
+                <Button
+                  type="primary"
+                  to="/"
+                  className="!hidden md:inline-block"
+                >
                   Kontaktovat
                 </Button>
               </li>

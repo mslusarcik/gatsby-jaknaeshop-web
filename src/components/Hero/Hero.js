@@ -1,8 +1,8 @@
 import React from "react"
 
 // Import components
-import Button from "./Button"
-import useCurrentWidth from "../hooks/useCurrentWidth"
+import Button from "../Button/Button"
+import useCurrentWidth from "../../hooks/useCurrentWidth"
 
 // Import other react stuff
 import { useState, useEffect } from "react"
@@ -53,7 +53,7 @@ const Hero = ({
           )}
           {secondaryButton && (
             <Button
-              className="ml-5"
+              className="md:ml-5"
               type={secondaryButtonType}
               target={secondaryButtonTarget}
             >
