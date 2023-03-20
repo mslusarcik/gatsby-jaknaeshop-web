@@ -7,6 +7,8 @@ import Container from "../components/Container/Container"
 import Hero from "../components/Hero/Hero"
 import Benefit from "../components/Benefit/Benefit"
 import Testimonial from "../components/Testimonial/Testimonial"
+import Alert from "../components/Alert/Alert"
+import Button from "../components/Button/Button"
 
 import useCurrentWidth from "../hooks/useCurrentWidth"
 
@@ -33,7 +35,6 @@ import {
   TbCheck,
   TbInfoCircle,
 } from "react-icons/tb"
-import Button from "../components/Button/Button"
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -44,6 +45,7 @@ import SwiperCore, { Autoplay, Navigation } from "swiper"
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/navigation"
+import FaqItem from "../components/Faq/FaqItem"
 
 SwiperCore.use([Autoplay, Navigation])
 
@@ -94,13 +96,13 @@ const IndexPage = () => {
           image={HeroImageLg}
           primaryButtonType="primary"
           primaryButton="Chci koupit kurz"
-          primaryButtonTarget="/"
+          primaryButtonTarget="#koupit"
           secondaryButtonType="default-outline"
           secondaryButton="Ještě se tu porozhlédnu"
-          secondaryButtonTarget="/"
+          secondaryButtonTarget="#start"
         ></Hero>
       </Section>
-      <Section>
+      <Section id="start">
         <Container>
           <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-around">
             <div className="content-holder max-w-[640px] lg:max-w-[520px]">
@@ -157,7 +159,7 @@ const IndexPage = () => {
           </h2>
           <div className="flex flex-col lg:flex-row justify-around mt-12 lg:mt-20">
             <Benefit
-              className="w-full lg:w-[25%] self-center flex flex-col mb-6 lg:mb-0"
+              className="w-full lg:w-[25%] self-baseline flex flex-col mb-6 lg:mb-0"
               icon={
                 <BiMicrophone
                   size="64"
@@ -178,7 +180,7 @@ const IndexPage = () => {
               }
             />
             <Benefit
-              className="w-full lg:w-[25%] self-center flex flex-col mb-6 lg:mb-0"
+              className="w-full lg:w-[25%] self-baseline flex flex-col mb-6 lg:mb-0"
               icon={
                 <TbPlayerTrackNext
                   size="64"
@@ -201,7 +203,7 @@ const IndexPage = () => {
               }
             />
             <Benefit
-              className="w-full lg:w-[25%] self-center flex flex-col"
+              className="w-full lg:w-[25%] self-baseline flex flex-col"
               icon={
                 <BiLeaf
                   size="64"
@@ -243,8 +245,6 @@ const IndexPage = () => {
               pauseOnMouseEnter: true,
             }}
             loop={true}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={swiper => console.log(swiper)}
           >
             <SwiperSlide>
               <Testimonial
@@ -309,7 +309,7 @@ const IndexPage = () => {
           </Swiper>
         </Container>
       </Section>
-      <Section className="bg-secondary">
+      <Section className="bg-secondary" id="koupit">
         <Container>
           <div className="flex items-center justify-around">
             <div className="content-holder">
@@ -470,81 +470,50 @@ const IndexPage = () => {
           <h2 className="lg:text-center">Co by vás mohlo ještě zajímat</h2>
           <p className="subtitle lg:text-center">FAQ SEKCE #TODO</p>
           <div className="flex flex-wrap mt-16">
-            <div className="faq-item w-full md:w-1/2 py-4 lg:pr-6 mb-4">
-              <h3 className="faq-question h5">
-                Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?
-              </h3>
-              <p className="faq-answer">
-                Celý kurz je rozložený do 5 modulů a 10 videí, které mají
+            <FaqItem
+              heading="Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?"
+              content="Celý kurz je rozložený do 5 modulů a 10 videí, které mají
                 dohromady 50 minut. Rozložení jednotlivých modulů je složené
-                tak, aby vám všechny informace dávaly smysl.
-              </p>
-            </div>
-            <div className="faq-item w-full md:w-1/2 py-4 lg:pl-6 mb-4">
-              <h3 className="faq-question h5">
-                Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?
-              </h3>
-              <p className="faq-answer">
-                Celý kurz je rozložený do 5 modulů a 10 videí, které mají
+                tak, aby vám všechny informace dávaly smysl."
+            ></FaqItem>
+            <FaqItem
+              heading="Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?"
+              content="Celý kurz je rozložený do 5 modulů a 10 videí, které mají
                 dohromady 50 minut. Rozložení jednotlivých modulů je složené
-                tak, aby vám všechny informace dávaly smysl.
-              </p>
-            </div>
-            <div className="faq-item w-full md:w-1/2 py-4 lg:pr-6 mb-4">
-              <h3 className="faq-question h5">
-                Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?
-              </h3>
-              <p className="faq-answer">
-                Celý kurz je rozložený do 5 modulů a 10 videí, které mají
+                tak, aby vám všechny informace dávaly smysl."
+            ></FaqItem>
+            <FaqItem
+              heading="Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?"
+              content="Celý kurz je rozložený do 5 modulů a 10 videí, které mají
                 dohromady 50 minut. Rozložení jednotlivých modulů je složené
-                tak, aby vám všechny informace dávaly smysl.
-              </p>
-            </div>
-            <div className="faq-item w-full md:w-1/2 py-4 lg:pl-6 mb-4">
-              <h3 className="faq-question h5">
-                Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?
-              </h3>
-              <p className="faq-answer">
-                Celý kurz je rozložený do 5 modulů a 10 videí, které mají
+                tak, aby vám všechny informace dávaly smysl."
+            ></FaqItem>
+            <FaqItem
+              heading="Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?"
+              content="Celý kurz je rozložený do 5 modulů a 10 videí, které mají
                 dohromady 50 minut. Rozložení jednotlivých modulů je složené
-                tak, aby vám všechny informace dávaly smysl.
-              </p>
-            </div>
-            <div className="faq-item w-full md:w-1/2 py-4 lg:pr-6 mb-4">
-              <h3 className="faq-question h5">
-                Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?
-              </h3>
-              <p className="faq-answer">
-                Celý kurz je rozložený do 5 modulů a 10 videí, které mají
+                tak, aby vám všechny informace dávaly smysl."
+            ></FaqItem>
+            <FaqItem
+              heading="Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?"
+              content="Celý kurz je rozložený do 5 modulů a 10 videí, které mají
                 dohromady 50 minut. Rozložení jednotlivých modulů je složené
-                tak, aby vám všechny informace dávaly smysl.
-              </p>
-            </div>
-            <div className="faq-item w-full md:w-1/2 py-4 lg:pl-6 mb-4">
-              <h3 className="faq-question h5">
-                Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?
-              </h3>
-              <p className="faq-answer">
-                Celý kurz je rozložený do 5 modulů a 10 videí, které mají
+                tak, aby vám všechny informace dávaly smysl."
+            ></FaqItem>
+            <FaqItem
+              heading="Je to vhodně pro podnikatele, kteri uz mají svůj e-shop?"
+              content="Celý kurz je rozložený do 5 modulů a 10 videí, které mají
                 dohromady 50 minut. Rozložení jednotlivých modulů je složené
-                tak, aby vám všechny informace dávaly smysl.
-              </p>
-            </div>
+                tak, aby vám všechny informace dávaly smysl."
+            ></FaqItem>
           </div>
-          <div
-            className="flex flex-col lg:flex-row px-4 py-8 mb-4 rounded-lg bg-blue-50 mt-2"
-            role="alert"
-          >
-            <TbInfoCircle
-              size={32}
-              className="lg:mr-4 lg:ml-2 mb-4 lg:mb-0"
-            ></TbInfoCircle>
-            <span className="sr-only">Info</span>
-            <div>
-              <h3 className="h5 !mb-1">Potřebujete vědět něco dalšího?</h3>
-              Kontaktujte mě <strong>na telefonní číslo 731 326 653.</strong>
-            </div>
-          </div>
+          <Alert
+            icon={
+              <TbInfoCircle className="text-sky-600" size={32}></TbInfoCircle>
+            }
+            heading="Potřebujete vědět něco dalšího?"
+            content="Kontaktujte mě <strong>na telefonní číslo 731 326 653.</strong>"
+          ></Alert>
         </Container>
       </Section>
     </Layout>
@@ -556,6 +525,6 @@ const IndexPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" bodyClass="type-index" />
+export const Head = () => <Seo title="Home" bodyClass="type-index"></Seo>
 
 export default IndexPage
