@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+@import url("https://use.typekit.net/kmy7nnp.css");
 
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: 'Prompt', sans-serif;
+  font-family: $bodyFont;
   font-size: 17px;
   font-weight: 300;
   font-style: normal;
-  word-spacing: -3px;
+  letter-spacing: .5px;
   line-height: 1.5rem;
+  line-height: 1.75;
   @apply text-greyV1;
 }
 
 b, strong {
-  font-weight: 400;
+  font-weight: 500;
 }
