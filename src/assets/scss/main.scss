@@ -12,10 +12,11 @@
  * BASE STYLES
  * *********** */
 
+@import 'base/base';
 @import 'base/variables';
 @import 'base/typography';
 @import 'base/fonts';
-@import 'base/normalize';
+// @import 'base/normalize';
 @import 'base/colors';
 @import 'base/lists';
 
