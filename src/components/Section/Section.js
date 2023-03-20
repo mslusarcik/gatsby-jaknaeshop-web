@@ -1,8 +1,11 @@
 import React from "react"
 
-const Section = ({ children, className }) => {
-  const classes = className ? className : ""
-  return <section className={`${classes}`}>{children}</section>
+const Section = ({ children, className, id }) => {
+  return (
+    <section className={className || ""} id={id || ""}>
+      {children}
+    </section>
+  )
 }
 
 export default Section
