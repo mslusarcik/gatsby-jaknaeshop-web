@@ -9,13 +9,13 @@ const getWidth = () => {
     )
   }
 }
+const useCurrentWidth = () => {
+  let [width, setWidth] = useState()
 
-function useCurrentWidth() {
-  // save current window width in the state object
-  let [width, setWidth] = useState(getWidth())
+  useEffect(() => {
+    setWidth(getWidth())
+  }, [])
 
-  // in this case useEffect will execute only once because
-  // it does not have any dependencies.
   useEffect(() => {
     // timeoutId for debounce mechanism
     let timeoutId = null
@@ -34,6 +34,11 @@ function useCurrentWidth() {
       window.removeEventListener("resize", resizeListener)
     }
   }, [])
+
+  if (!width) {
+    // Returns null on first render, so the client and server match
+    return null
+  }
 
   return width
 }
