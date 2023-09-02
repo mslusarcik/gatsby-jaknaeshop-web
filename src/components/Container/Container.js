@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 
-const Container = ({ children, fluid }) => {
-  const containerClass = fluid ? "container-fluid" : "container"
-  return <div className={`${containerClass}`}>{children}</div>
-}
+const Container = ({ children, fluid, className }) => {
+  const containerClass = fluid ? 'container-fluid' : 'container';
+  return <div className={`${containerClass} ${className ? className : ''}`}>{children}</div>;
+};
 
-export default Container
+export default Container;

@@ -1,31 +1,62 @@
-.hero {
-  .content {
-    padding: 2rem 0;
-    @screen lg {
-      padding: 2.5rem 4rem;
-    }
-    p.subtitle {
-      font-size: 1.3rem;
-      line-height: 1.75;
-      font-weight: 300;
-      color: #dedede;
-      @screen md {
-        font-size: 1.3rem;
-        line-height: 1.75rem;
-      }
-
-      strong {
-        font-weight: 500;
-      }
-    }
+.hero-section {
+  height: auto;
+  min-height: calc(100vh - 96px);
+  @screen md {
+    margin-bottom: 112px;
+    height: calc(100vh - 96px);
   }
-  .btn {
-    margin-top: 2rem;
-    @screen lg {
-      margin-top: 2.5rem;
+  @screen lg {
+    min-height: 820px;
+  }
+
+  .hero {
+    height: 100%;
+
+    .content {
+      @apply container;
+      padding: 2rem 0;
+      @screen lg {
+        padding: 2.5rem 4rem;
+      }
+      p.subtitle {
+        font-size: 1.3rem;
+        line-height: 1.75;
+        font-weight: 300;
+        color: #262626;
+        @screen md {
+          font-size: 1.3rem;
+          line-height: 1.75rem;
+        }
+  
+        strong {
+          font-weight: 400;
+        }
+      }
+  
+      .half-image {
+        height: calc(100vh - 96px);
+        position: absolute !important;
+        top: auto;
+        bottom: 0;
+        width: 55%;
+        object-fit: cover;
+        object-position: bottom right;
+        @screen lg {
+          min-height: 820px;
+        }
+        img {
+          object-position: bottom right !important;
+        }
+      }
     }
-    & + .btn {
-      margin-top: 1rem;
+    .btn {
+      margin-top: 2rem;
+      @screen lg {
+        margin-top: 2.5rem;
+      }
+      & + .btn {
+        margin-top: 1rem;
+      }
     }
   }
 }

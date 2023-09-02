@@ -1,6 +1,19 @@
 main {
-  min-height: calc(100vh - 114px - 96px);
+  min-height: calc(100vh - 112px - 96px);
   overflow: hidden;
+
+  .centered-content & {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reset-header-xs & {
+    @media (max-width: 768px){
+      margin-top: -96px;
+    }
+  }
 }
 
 .inner-content {

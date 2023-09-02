@@ -2,7 +2,7 @@ ul {
   @apply pl-2;
   
   li {
-    @apply leading-6;
+    line-height: 1.65rem;
     @apply my-2;
 
     svg {
@@ -19,7 +19,7 @@ ol {
   @apply pl-2;
   
   li {
-    @apply leading-6;
+    line-height: 1.65rem;
     @apply my-2;
 
     svg {

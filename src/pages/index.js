@@ -65,16 +65,8 @@ const IndexPage = () => {
             color: "white",
           }}
         >{`Current width -> ${width}`}</div>
-        {/* <Container>{`Current width -> ${width}`}</Container> */}
         <Hero
           className="rounded-none"
-          // title={
-          //   <>
-          //     Toužíte po <span className="">vlastním e&#8209;shopu</span>
-          //     , <br />
-          //     ale nevíte kde a jak začít?
-          //   </>
-          // }
           title={
             <>
               Nastartujte konečně <br className="hidden lg:block" />
@@ -95,7 +87,7 @@ const IndexPage = () => {
           imageMdUp={HeroImageLg}
           image={HeroImageLg}
           primaryButtonType="primary"
-          primaryButton="Chci koupit kurz"
+          primaryButton="Chci svůj e-shop"
           primaryButtonTarget="#koupit"
           secondaryButtonType="default-outline"
           secondaryButton="Ještě se tu porozhlédnu"
@@ -525,6 +517,10 @@ const IndexPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" bodyClass="type-index"></Seo>
+export const Head = () => (
+  <Seo title="Home" bodyClass="type-index">
+    <meta http-equiv="refresh" content="0;url=/kurzy/vlastni-eshop" />
+  </Seo>
+)
 
 export default IndexPage

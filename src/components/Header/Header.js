@@ -17,10 +17,10 @@ const Header = () => {
           <div className="logo-wrapper">
             <Link to={"/"} className="flex items-center">
               <img src={Logo} alt="" className="logo" />
-              <span className="font-bold text-md md:text-xl ml-2">
+              <span className="font-bold text-sm md:text-lg lg:text-xl ml-2">
                 JAKNAESHOP
                 <br />
-                <span className="font-light text-[14px] lg:text-sm block">
+                <span className="font-light text-[12px] md:text-[14px] lg:text-sm block">
                   …ukážu vám, že e-shop může mít každý
                 </span>
               </span>

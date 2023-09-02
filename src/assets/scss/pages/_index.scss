@@ -6,20 +6,5 @@
   }
   main {
     min-height: calc(100vh - 112px);
-
-    .hero {
-      padding-top: 96px;
-      min-height: 100vh;
-      @screen md {
-        min-height: 650px;
-      }
-
-      .content {
-        @apply container;
-        @screen lg {
-          padding: 2.5rem 4rem;
-        }
-      }
-    }
   }
 }

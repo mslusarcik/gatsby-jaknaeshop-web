@@ -1,5 +1,6 @@
 {
   "marquee.widgets.npm-stats.packageNames": [
     "gatsby-starter-default"
-  ]
+  ],
+  "scss.lint.unknownAtRules": "ignore"
 }

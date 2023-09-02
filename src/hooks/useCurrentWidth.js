@@ -10,7 +10,7 @@ const getWidth = () => {
   }
 }
 const useCurrentWidth = () => {
-  let [width, setWidth] = useState()
+  let [width, setWidth] = useState(null)
 
   useEffect(() => {
     setWidth(getWidth())
@@ -37,7 +37,7 @@ const useCurrentWidth = () => {
 
   if (!width) {
     // Returns null on first render, so the client and server match
-    return null
+    return "..."
   }
 
   return width

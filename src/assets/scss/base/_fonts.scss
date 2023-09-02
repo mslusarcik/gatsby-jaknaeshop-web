@@ -6,15 +6,15 @@ html {
 
 body {
   font-family: $bodyFont;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
   font-style: normal;
   letter-spacing: .5px;
-  line-height: 1.5rem;
-  line-height: 1.75;
+  word-spacing: -1px;
+  line-height: 1.75rem;
   @apply text-greyV1;
 }
 
 b, strong {
-  font-weight: 500;
+  font-weight: 400;
 }

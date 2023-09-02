@@ -12,6 +12,15 @@ header {
     min-height: 96px;
   }
 
+  .reset-header-xs & {
+    @media (max-width: 768px){
+      z-index: 5;
+      background-color: transparent;
+      position: relative;
+      background: transparent linear-gradient(0deg, rgb(34 34 34 / 0%) 5%, rgb(34 34 34) 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+
   .inner-header {
     margin: 0 auto;
     display: flex;
